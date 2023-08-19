@@ -4,7 +4,7 @@
 ### install
 
 ```
-curl -sSL https://raw.githubusercontent.com/Ptechgithub/warp/main/endip.sh -o endip.sh && chmod +x endip.sh && ./endip.sh
+curl -sSL https://raw.githubusercontent.com/Otisist/warp/main/endip.sh -o endip.sh && chmod +x endip.sh && ./endip.sh
 
 ```
 

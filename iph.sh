@@ -20,7 +20,7 @@ case "$(uname -m)" in
 esac
 
 cfwarpreg(){
-curl -sSL https://raw.githubusercontent.com/Ptechgithub/warp/main/acwarp.sh -o acwarp.sh && chmod +x acwarp.sh && ./acwarp.sh
+curl -sSL https://raw.githubusercontent.com/Otisist/warp/main/acwarp.sh -o acwarp.sh && chmod +x acwarp.sh && ./acwarp.sh
 }
 
 warpendipv4v6(){
@@ -40,7 +40,7 @@ fi
 cfwarpIP(){
 echo "Download the warp optimization program"
 if [[ -n $cpu ]]; then
-curl -L -o warpendpoint -# --retry 2 https://raw.githubusercontent.com/Ptechgithub/warp/main/$cpu
+curl -L -o warpendpoint -# --retry 2 https://raw.githubusercontent.com/Otisist/warp/main/cpu/$cpu
 fi
 }
 
@@ -189,7 +189,7 @@ ulimit -n 102400
 chmod +x warpendpoint
 ./warpendpoint
 clear
-cat result.txt | awk -F, '$3!="timeout ms" {print} ' | sort -t, -nk2 -nk3 | uniq | head -11 | awk -F, '{print "endpoint "$1" packet loss rate "$2" average delay "$3}' 
+cat result.csv | awk -F, '$3!="timeout ms" {print} ' | sort -t, -nk2 -nk3 | uniq | head -11 | awk -F, '{print "endpoint "$1" packet loss rate "$2" average delay "$3}' 
 rm -rf ip.txt warpendpoint
 exit
 }

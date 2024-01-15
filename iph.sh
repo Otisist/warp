@@ -189,7 +189,7 @@ ulimit -n 102400
 chmod +x warpendpoint
 ./warpendpoint
 clear
-cat result.csv | awk -F, '$3!="timeout ms" {print} ' | sort -t, -nk2 -nk3 | uniq | head -11 | awk -F, '{print "endpoint "$1" packet loss rate "$2" average delay "$3}' 
+cat result.txt | awk -F, '$3!="timeout ms" {print} ' | sort -t, -nk2 -nk3 | uniq | head -11 | awk -F, '{print "endpoint "$1" packet loss rate "$2" average delay "$3}' 
 rm -rf ip.txt warpendpoint
 exit
 }

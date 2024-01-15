@@ -1,14 +1,11 @@
 # warp 
-## get wireguard config and prrfered ipv4/ipv6
+## get wireguard config and perrfered ipv4/ipv6
 
 ### install
 
 ```
-curl -sSL https://raw.githubusercontent.com/Otisist/warp/main/endip.sh -o endip.sh && chmod +x endip.sh && ./endip.sh
+curl -sSL https://raw.githubusercontent.com/Otisist/warp/main/wgcfip.sh -o wgcfip.sh && chmod +x wgcfip.sh && ./wgcfip.sh
 
 ```
 
-
-### برای گرفتن کانفیگ WireGuard  از لینک زیر نیز میتوانید اقدام کنید:👇 
-
-[https://replit.com/@Ptechgithub/Warp](https://replit.com/@Ptechgithub/Warp)
+Ptechgithub
